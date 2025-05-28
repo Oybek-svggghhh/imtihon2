@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+    <header>
+        <h1><span class="highlight">M</span>OVIES<span class="highlight">!</span></h1>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Enter your movie name" />
+        <select id="genreFilter">
+            <option value="all">All</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Animation">Animation</option>
+        </select>
+        <button onclick="sortMovies()">Sort</button>
+        <button onclick="searchMovies()">Search</button>
+    </div>
+    <div id="moviesContainer" class="movies-container"></div>
+
+    <script src="./movies.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
